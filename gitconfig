@@ -1,0 +1,12 @@
+[user]
+    name = Andreas Boesen
+    email = andreasb@selfnet.de
+[core]
+    editor = vim 
+    excludesfile = /Users/august/.gitignore_global
+[alias]
+    sup = log --all --graph --pretty=format:'%Cblue%h%C(yellow)%d %Creset%s %Cgreen(%cr) %Cred%an%+b'
+[push]
+    default = current
+
+
