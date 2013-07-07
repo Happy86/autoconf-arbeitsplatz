@@ -8,6 +8,7 @@ set backspace=indent,eol,start
 set nocompatible
 syn on
 set background=dark
+"colorscheme desert
 
 set number
 set ruler 
@@ -20,6 +21,21 @@ set title
 set ttyfast
 set modeline
 set modelines=3
+
+
+"" highlight the current line and column (ctermbg=234)
+set cul
+hi CursorLine cterm=NONE ctermbg=234
+set cuc
+hi CursorColumn cterm=NONE ctermbg=234
+
+"" coloring of linenumbers
+hi CursorLineNr cterm=bold ctermfg=red
+hi LineNr ctermfg=blue
+
+"" highlight same words, taken from https://github.com/adimit
+"hi flicker cterm=bold ctermbg=234
+"au CursorMoved <buffer> exe 'match flicker /\V\<'.escape(expand('<cword>'),'/').'\>/'
 
 
 "" persistent undo and backup
