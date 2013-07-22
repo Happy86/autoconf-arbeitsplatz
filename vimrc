@@ -65,6 +65,7 @@ set wildmenu " menu when tab completing commands
 
 
 "colorscheme elflord
+colorscheme default
 
 map <F1> :previous<CR>
 map <F2> :next<CR>
