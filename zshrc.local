@@ -5,9 +5,9 @@ bindkey '\e.' insert-last-word #alt . working in vim mode
 export TERM="screen-256color"
 
 # autostart tmux
-if which tmux 2>&1 >/dev/null; then
-    test -z "$TMUX" && (tmux attach || tmux new-session)
-fi
+#if which tmux 2>&1 >/dev/null; then
+#    test -z "$TMUX" && (tmux attach || tmux new-session)
+#fi
 
 
 # Filename:      /etc/skel/.zshrc
