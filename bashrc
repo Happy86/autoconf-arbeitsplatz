@@ -20,6 +20,8 @@ else
 #	echo "Hallo Darwin."
 fi 
 
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
 
 if [ "$TERM" == "screen" ]; then
    echo -en "\033k`hostname`\033\\"
@@ -40,6 +42,9 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -lh'
 alias la='ls $LS_OPTIONS -lah'
 alias diff='diff --side-by-side --suppress-common-lines'
+alias grep='grep --color=auto'
+alias tree='tree -C'
+
 
 alias xen="ssh august@141.31.176.216 -i ~/.ssh/id_rsa_xen_AndreasBoesen_selfnet"
 alias macbookVNC="echo listen to localhost 31337;ssh -L 31337:localhost:5900 august@rincewind.vaih.selfnet"
