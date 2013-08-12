@@ -22,7 +22,7 @@ fi
 
 
 if [ "$TERM" == "screen" ]; then
-   echo -en "\033k`hostname`\033\\"
+   echo -en "\033k`hostname`\033\\"
 fi
 
 
@@ -56,7 +56,7 @@ alias tafelcluster_andreasb="clusterssh andreasb@tafelrunde1 andreasb@tafelrunde
 
 
 
-PS1='WTF? \[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
+PS1='WTF? \[\e[1;32m\][\u@\h \w]\$\[\e[0m\] '
 command_not_found_handle() { which cowsay >/dev/null && cowsay 'lol, u stupid.'; }
 
 #exec /usr/bin/zsh

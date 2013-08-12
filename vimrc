@@ -24,10 +24,10 @@ set modelines=3
 
 
 "" highlight the current line and column (ctermbg=234)
-set cul
-hi CursorLine cterm=NONE ctermbg=234
-set cuc
-hi CursorColumn cterm=NONE ctermbg=234
+"set cul
+"hi CursorLine cterm=NONE ctermbg=054
+"set cuc
+"hi CursorColumn cterm=NONE ctermbg=234
 
 "" coloring of linenumbers
 hi CursorLineNr cterm=bold ctermfg=red
