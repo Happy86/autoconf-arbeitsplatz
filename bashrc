@@ -1,3 +1,5 @@
+alias packettracer="/usr/local/PacketTracer6/bin/PacketTracer6"
+
 # bash check for OS (if Darwin no colors because doesn't work ...) >_> 
 if [ `uname` = "Linux" ]; then
 	export LS_OPTIONS='-F --color=auto'
@@ -56,7 +58,7 @@ alias tafelcluster_andreasb="clusterssh andreasb@tafelrunde1 andreasb@tafelrunde
 
 
 
-PS1='WTF? \[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
+PS1='WTF? \[\e[1;32m\][\u@\h \w]\$\[\e[0m\] '
 command_not_found_handle() { which cowsay >/dev/null && cowsay 'lol, u stupid.'; }
 
 #exec /usr/bin/zsh
