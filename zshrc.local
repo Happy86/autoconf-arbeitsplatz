@@ -1,7 +1,12 @@
 PATH="/home/andreasb/bin:$PATH"
 
+
+
 setopt vi
 bindkey '\e.' insert-last-word #alt . working in vim mode
+bindkey "^A" vi-beginning-of-line
+bindkey "^E" vi-end-of-line
+
 export TERM="screen-256color"
 
 # autostart tmux

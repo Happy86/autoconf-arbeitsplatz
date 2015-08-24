@@ -1,6 +1,7 @@
 [user]
     name = Andreas Boesen
-    email = andreasb@selfnet.de
+    #email = andreasb@selfnet.de
+    email = boesen@belwue.de
 [core]
     editor = vim 
     excludesfile = /Users/august/.gitignore_global

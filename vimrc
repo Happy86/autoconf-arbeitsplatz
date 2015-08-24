@@ -4,9 +4,12 @@ set shell=/bin/zsh
 set spelllang=de
 set backspace=indent,eol,start
 
+set pdev=cups_pdf
+set printoptions=number:y
 
 set nocompatible
 syn on
+"highlight Normal ctermfg=grey ctermbg=black
 set background=dark
 "colorscheme desert
 
@@ -23,6 +26,10 @@ set modeline
 set modelines=3
 
 
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
 "" highlight the current line and column (ctermbg=234)
 "set cul
 "hi CursorLine cterm=NONE ctermbg=054
@@ -30,8 +37,8 @@ set modelines=3
 "hi CursorColumn cterm=NONE ctermbg=234
 
 "" coloring of linenumbers
-hi CursorLineNr cterm=bold ctermfg=red
-hi LineNr ctermfg=blue
+"hi CursorLineNr cterm=bold ctermfg=red
+"hi LineNr ctermfg=blue
 
 "" highlight same words, taken from https://github.com/adimit
 "hi flicker cterm=bold ctermbg=234
@@ -52,8 +59,8 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 "set textwidth=79
-set shiftwidth=4
-set softtabstop=4
+"set shiftwidth=4
+"set softtabstop=4
 
 
 set nostartofline " don't move the coursor to the beginning of the line
@@ -65,7 +72,7 @@ set wildmenu " menu when tab completing commands
 
 
 "colorscheme elflord
-colorscheme default
+"colorscheme default
 
 map <F1> :previous<CR>
 map <F2> :next<CR>
