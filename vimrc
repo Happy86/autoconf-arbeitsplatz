@@ -4,6 +4,9 @@ set shell=/bin/zsh
 set spelllang=de
 set backspace=indent,eol,start
 
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+
 set pdev=cups_pdf
 set printoptions=number:y
 
@@ -22,8 +25,8 @@ set hlsearch
 set showcmd
 set title
 set ttyfast
-set modeline
-set modelines=3
+"set modeline
+"set modelines=3
 
 
 set expandtab
@@ -48,9 +51,9 @@ set shiftwidth=4
 "" persistent undo and backup
 set history=1000
 set undofile
-set undodir=~/.backup/
+set undodir=~/.vim/undo
 set backup
-set backupdir=~/.backup/
+set backupdir=~/.vim/backup
 
 
 "folding settings
@@ -78,5 +81,9 @@ map <F1> :previous<CR>
 map <F2> :next<CR>
 map <C-n> :bn!<CR>
 map <C-b> :bp!<CR>
+
+" w!! = sudo save
+cmap w!! w !sudo tee %
+
 
 

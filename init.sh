@@ -1,6 +1,8 @@
 #!/bin/bash
 
-mkdir -p ~/.backup
+mkdir -p ~/.vim/undo
+mkdir -p ~/.vim/undo
+
 ln -snf `pwd`/vimrc ~/.vimrc
 ln -snf `pwd`/bashrc ~/.bashrc
 ln -snf `pwd`/tmux.conf ~/.tmux.conf
