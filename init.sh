@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p ~/.vim/undo
-mkdir -p ~/.vim/undo
+mkdir -p ~/.vim/backup
 
 ln -snf `pwd`/vimrc ~/.vimrc
 ln -snf `pwd`/bashrc ~/.bashrc
