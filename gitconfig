@@ -1,13 +1,15 @@
 [user]
     name = Andreas Boesen
-    #email = andreasb@selfnet.de
-    email = boesen@belwue.de
+    email = andreasb@selfnet.de
+#    email = boesen@belwue.de
 [core]
     editor = vim 
     excludesfile = /Users/august/.gitignore_global
 [alias]
     sup = log --all --graph --pretty=format:'%Cblue%h%C(yellow)%d %Creset%s %Cgreen(%cr) %Cred%an%+b'
     check-merge = "!git merge-tree $(git merge-base $1 $2) $1 $2|grep -q 'changed in both'&&echo 'Merge conflict!'||echo 'Can be merged automatically :)';echo >/dev/null"
+    co = checkout
+    s = status
 [push]
     default = current
 
